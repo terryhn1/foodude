@@ -35,6 +35,10 @@
 h2{
     color:beige;
 }
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
     .ShopName{
     font-size: 3vw;
@@ -93,6 +97,12 @@ h2{
     transition: width 0.4s linear;
     }
 
+    .heart{
+        background-image:url("https://i.imgur.com/fywmJLQ.png");
+    }
+    .heart:active{
+        background-image: url("https://i.imgur.com/pG6NbsI.png");
+    }
     .searchbar:hover > .search_input{
     padding: 0 10px;
     width: 450px;
@@ -119,6 +129,11 @@ h2{
     border-radius: 50%;
     text-decoration:none;
     }
+
+    .container{
+        background-color: #353b48;
+        border-radius: 20px;
+    }
   </style>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -129,56 +144,8 @@ h2{
         <center> <h1 style="font-family: 'Merriweather', serif;background-color: #353b48;padding:20px; color:white">FOODUDE  <img src="https://i.imgur.com/pkMF0BL.png" style="width:9vh"></h1></center>
       </container>
      
-      <!-- Search Bar -->
 
-        <div class="d-flex h-100" style="padding-left: 10vw;padding-top: 10px;">
-          <div class="searchbar">
-            <input class="search_input" type="text" name="" placeholder="Search...">
-            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-          </div>
-        </div>
-
-        <!-- Each card -->
-
-      </div>
-      <br>
-      <div class="Content"> 
-          <div class="container" >
-              <div class="card mb-3"style="height: 20vw; border-radius:50px;background-color: #353b48" >
-                  <div class="ShopDetails">
-
-                    <!-- Image -->
-
-                        <div class="col-md-4 ShopImage" >
-                          <img style="border-radius: 50px;width:24vw"src="https://s3-media4.fl.yelpcdn.com/bphoto/rPopevlTEzAlyIYJSHiRWQ/o.jpg">
-                        </div>
-
-                        <!-- Information in Card -->
-
-                        <div class="col-md-8    ">
-                                <h4 style="padding-top: 10px;color:beige; font-size:1.5vw; padding-left:15px;"> Name </h4>
-                                <h4 style="font-size:1.5vw; color:beige;padding-left:15px;"> location </h4>
-                                <h2 style="font-size:1.5vw;padding-left:15px;">$$$$</h2>
-                                <p style="font-size:1.5vw;padding-left:15px;">DESCRIPTIOnDESCRIPTIOnDESCRIPTIOnDESCRIPTIOnDESCRIPTIOn</p>
-                        </div>
-
-                        <!-- Arrows -->
-                        <div class="col-md-2">
-                        <div style="padding-top: 10vh;padding-left: .5vw;">
-                            <img style="width:3vw" src="https://i.imgur.com/TFk7613.png">
-                        </div>
-                        <div style="padding-top: 0vh;padding-left: .5vw;">
-                            <p style="color:#353b48" ;>234567</p>
-                        </div>
-                        <div style="padding-top: 0vh;padding-left: .5vw;">
-                            <img style="width:3vw" src="https://i.imgur.com/dDgXHdb.png?1">
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div id="root"></div>
+      <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
