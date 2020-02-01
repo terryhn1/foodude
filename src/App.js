@@ -1,17 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import Card from './Card.js'; 
 
-class userPosts extends React.Component {
-  constructor(props){
-    super(props); 
+class App extends React.Component {
+
+  render(){
+    return <React.Fragment>
+      <Card></Card>
+    </React.Fragment>
   }
-
-  //Create a function that implements the search button
-
-  
-
-  //Add in this class the things that needs to be uploaded into the index.html later on.
-  //For each element in userPost database, then render the  
 }
 
 export default App;
