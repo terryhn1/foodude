@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> 
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Foodude</title>
+  </head>
+  <style>
+    p{
+        color:beige;
+    }
+h2{
+    color:beige;
+}
+
+    .ShopName{
+    font-size: 3vw;
+    height: 10vh;
+    display: flex;
+    padding-top: 10px;
+}
+
+.ShopImage{
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+
+
+.ShopDetails{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    body{
+        background-color: beige;
+    }
+
+
+
+    .searchbar{
+    margin-bottom: auto;    
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    
+    color: #e74c3c;
+    background-image: url("https://i.imgur.com/SN5ftks.png");
+    background-size:contain;
+    }
+
+    .search_icon{
+    background-image: url("https://i.imgur.com/SN5ftks.png");
+    background-size:contain;
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration:none;
+    }
+  </style>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <body>
+      
+      <!-- Header -->
+      <container >
+        <center> <h1 style="font-family: 'Merriweather', serif;background-color: #353b48;padding:20px; color:white">FOODUDE  <img src="https://i.imgur.com/pkMF0BL.png" style="width:9vh"></h1></center>
+      </container>
+     
+      <!-- Search Bar -->
+
+        <div class="d-flex h-100" style="padding-left: 10vw;padding-top: 10px;">
+          <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="Search...">
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+
+        <!-- Each card -->
+
+      </div>
+      <br>
+      <div class="Content"> 
+          <div class="container" >
+              <div class="card mb-3"style="height: 20vw; border-radius:50px;background-color: #353b48" >
+                  <div class="ShopDetails">
+
+                    <!-- Image -->
+
+                        <div class="col-md-4 ShopImage" >
+                          <img style="border-radius: 50px;width:24vw"src="https://s3-media4.fl.yelpcdn.com/bphoto/rPopevlTEzAlyIYJSHiRWQ/o.jpg">
+                        </div>
+
+                        <!-- Information in Card -->
+
+                        <div class="col-md-8    ">
+                                <h4 style="padding-top: 10px;color:beige; font-size:1.5vw; padding-left:15px;"> Name </h4>
+                                <h4 style="font-size:1.5vw; color:beige;padding-left:15px;"> location </h4>
+                                <h2 style="font-size:1.5vw;padding-left:15px;">$$$$</h2>
+                                <p style="font-size:1.5vw;padding-left:15px;">DESCRIPTIOnDESCRIPTIOnDESCRIPTIOnDESCRIPTIOnDESCRIPTIOn</p>
+                        </div>
+
+                        <!-- Arrows -->
+                        <div class="col-md-2">
+                        <div style="padding-top: 10vh;padding-left: .5vw;">
+                            <img style="width:3vw" src="https://i.imgur.com/TFk7613.png">
+                        </div>
+                        <div style="padding-top: 0vh;padding-left: .5vw;">
+                            <p style="color:#353b48" ;>234567</p>
+                        </div>
+                        <div style="padding-top: 0vh;padding-left: .5vw;">
+                            <img style="width:3vw" src="https://i.imgur.com/dDgXHdb.png?1">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
