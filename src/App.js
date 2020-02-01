@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './Card.js';
 import SearchBar from './searchBar.js';
-import axios from "axios"; 
 
 class App extends React.Component {
 
