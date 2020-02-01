@@ -39,7 +39,3 @@ exports.getFoodShops = async(req, res, next) => {
         })
     }
 }
-
-exports.createFoodPost = async(req, res, next) => {
-    const newFoodPost = await FoodEntry.create(req.body); 
-}
